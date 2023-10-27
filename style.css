@@ -150,6 +150,8 @@ nav ul li a:hover {
     height: 50vh;
 } 
 
+
+
 .home-content {
     position: absolute;
     text-align: center;
@@ -166,8 +168,10 @@ nav ul li a:hover {
 
 .home-content h2 {
     font-size: clamp(1.5rem,1vw + 3.5rem, 4.5rem);
-    color: var(--orange);
-    font-family: 'Great Vibes', cursive;
+    
+    color: var(--black);
+    /* шрифт заменил на стандартный */
+    /* font-family: 'Great Vibes', cursive; */
 }
 
 .home-content h1 {
@@ -236,10 +240,33 @@ k {
     text-align-last: center;
 }
 
+/* Добавляю анимацию текста */
+
+
+.container h2 {
+    background: linear-gradient(45deg, #f00, #f0f, #ff0, #00f,#0ff,#0f0,#f9690e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .3rem transparent;
+    color: #070518;
+    background-size: 500%;
+    animation: text-animation 12s linear infinite;
+}
+
+@keyframes text-animation {
+    0%{
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
+}
+
 .about .content-about .btn {
     padding: 1rem 2.5rem;
     border: var(--border);
-    color: var(--black);
+    /* постоянный цвет убран */
+    /* color: var(--orange); */
     border-radius: 2rem;
     font-size: 1.8rem;
     transition: 0.5s;
@@ -430,9 +457,9 @@ k {
 
 .footer {
     background: var(--white);
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 /* up section */
