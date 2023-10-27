@@ -52,7 +52,7 @@ t {
 
 .skill-percentage {
     height: 12px;
-    background: orangered;
+    background: rgb(25, 156, 8);
     border-radius: 4rem;
     position: relative;
 }
