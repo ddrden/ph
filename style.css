@@ -14,6 +14,22 @@ html {
     font: size 62.5%;
 }
 
+/* обработка черный белый */
+/* inputv [type="checkbox"]{
+    display: none;
+}
+
+label {
+    
+    position: absolute;    
+    right: 50px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -470,14 +486,32 @@ k {
 
 /* Социальные ссылки */
 
-.social-icons {
+.social-icons {   
     font-size: 25px;
-    color: blue;
+    color: rgb(25, 141, 44);
     cursor: pointer;
+    margin: 0 1rem;
     margin-bottom: 20px;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
+/* колоризация иконок */
+
+.fa-telegram:hover {
+    color: rgb(31, 78, 165);
+}
+
+.fa-vk:hover {
+    color: rgb(34, 34, 128)
+}
+
+.fa-youtube:hover {
+    color: rgb(168, 13, 13);
+}
+
+.fa-mail-bulk:hover {
+    color:rgb(139, 139, 71);
+}
 /* .social-icons i {
     margin: 0px 5px;
     transition: 0.5s;
@@ -489,7 +523,25 @@ k {
 
 
 /* Отработка нажатия социальных кнопок */
-.social-icons:active {
+.fa-telegram:active {
+    background: white;
+    box-shadow: 0 5px white;
+    transform: translateY(7px);
+}
+
+.fa-youtube:active {
+    background: white;
+    box-shadow: 0 5px white;
+    transform: translateY(7px);
+}
+
+.fa-mail-bulk:active {
+    background: white;
+    box-shadow: 0 5px white;
+    transform: translateY(7px);
+}
+
+.fa-vk:active {
     background: white;
     box-shadow: 0 5px white;
     transform: translateY(7px);
